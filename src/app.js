@@ -13,7 +13,40 @@ const questions = [
         question: "Which planet is known as the Red Planet?",
         options: ["Earth", "Mars", "Jupiter", "Venus"],
         answer: "Mars"
-    }
+    },
+
+    // adding more questions of Science , History & programming :
+
+    {
+        question: "What is the largest mammal in the world?",
+        options: ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+        answer: "Blue Whale"
+    },
+    {
+        question: "Who developed the theory of relativity?",
+        options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Nikola Tesla"],
+        answer: "Albert Einstein"
+    },
+    {
+        question: "What is the capital of Japan?",
+        options: ["Seoul", "Tokyo", "Beijing", "Bangkok"],
+        answer: "Tokyo"
+    },
+    {
+        question: "Which element has the chemical symbol 'O'?",
+        options: ["Oxygen", "Gold", "Silver", "Iron"],
+        answer: "Oxygen"
+    },
+    {
+        question: "What is the smallest prime number?",
+        options: ["0", "1", "2", "3"],
+        answer: "2"
+    },
+     
+    
+
+    
+ 
 ];
 
 let currentQuestionIndex = 0;
