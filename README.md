@@ -47,5 +47,7 @@ This repository is part of Hacktoberfest 2024 🎉! As part of your Hacktoberfes
 If you have any questions or need help, feel free to create an issue on GitHub and we’ll be happy to assist you.
 
 Happy Quizzing!!! 🚀
+
 Happy Learning Adventures!!! 🚀
+
 𝗦𝗨𝗗𝗛Λ 𝗬Λ𝗗Λ𝗩
