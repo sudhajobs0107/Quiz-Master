@@ -18,7 +18,12 @@ const questions = [
     question: "Which language is primarily used for web development?",
     options: ["Python", "C++", "JavaScript", "Java"],
     correctAnswer: "JavaScript"
-  }
+  },
+  {
+    question: "What is the default port for HTTP?",
+    options: ["80", "22", "443", "8080"],
+    correctAnswer: "80"
+}
 ];
 
 let currentQuestionIndex = 0;
