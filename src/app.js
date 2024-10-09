@@ -14,6 +14,7 @@ const questions = [
         options: ["Earth", "Mars", "Jupiter", "Venus"],
         answer: "Mars"
     },
+ 
 
     // adding more questions of Science , History & programming :
 
@@ -46,6 +47,13 @@ const questions = [
     
 
     
+ 
+ 
+    {
+    question: "Which language is primarily used for web development?",
+    options: ["Python", "C++", "JavaScript", "Java"],
+    correctAnswer: "JavaScript"
+  }
  
 ];
 
