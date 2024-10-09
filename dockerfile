@@ -19,8 +19,8 @@ RUN npm run build
 # Install Nginx to serve the application
 RUN npm install -g serve
 
-# Expose port 80
-EXPOSE 80
+# Expose port 8080
+EXPOSE 8080
 
 # Command to serve the app
-CMD ["serve", "-s", "build"]
+CMD ["npx", "live-server", "--host=0.0.0.0"]
