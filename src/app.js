@@ -15,15 +15,20 @@ const questions = [
         answer: "Mars"
     },
     {
-    question: "Which language is primarily used for web development?",
-    options: ["Python", "C++", "JavaScript", "Java"],
-    correctAnswer: "JavaScript"
-  },
-  {
-    question: "What is the default port for HTTP?",
-    options: ["80", "22", "443", "8080"],
-    correctAnswer: "80"
-}
+        question: "Which language is primarily used for web development?",
+        options: ["Python", "C++", "JavaScript", "Java"],
+        correctAnswer: "JavaScript"
+    },
+    {
+        question: "What is the default port for HTTP?",
+        options: ["80", "22", "443", "8080"],
+        correctAnswer: "80"
+    },
+    {
+        question: "Which of the following is a version control system?",
+        options: ["Git", "Docker", "AWS", "Jenkins"],
+        correctAnswer: "Git"
+    }
 ];
 
 let currentQuestionIndex = 0;
