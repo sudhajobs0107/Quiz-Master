@@ -50,10 +50,32 @@ const questions = [
  
  
     {
+ 
     question: "Which language is primarily used for web development?",
     options: ["Python", "C++", "JavaScript", "Java"],
     correctAnswer: "JavaScript"
   }
+ 
+ 
+        question: "Which language is primarily used for web development?",
+        options: ["Python", "C++", "JavaScript", "Java"],
+        correctAnswer: "JavaScript"
+    },
+    {
+        question: "What is the default port for HTTP?",
+        options: ["80", "22", "443", "8080"],
+        correctAnswer: "80"
+    },
+    {
+        question: "Which of the following is a version control system?",
+        options: ["Git", "Docker", "AWS", "Jenkins"],
+        correctAnswer: "Git"
+    },
+    {
+        question: "Which HTML element is used to define a header for a document?",
+        options: ["<header>", "<head>", "<h1>", "<section>"],
+        correctAnswer: "<header>"
+    }
  
 ];
 
