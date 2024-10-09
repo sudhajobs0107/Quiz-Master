@@ -1,0 +1,76 @@
+name: Quiz Master CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-scan:
+    runs-on: ubuntu-latest
+
+    env:
+      TERM: xterm
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Docker Image
+        run: |
+          echo "${{ secrets.DOCKER_PASSWORD_TOKEN }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+          docker build . -t quiz-master
+
+      - name: Install Docker Scout
+        run: |
+          sudo apt update && sudo apt -y install curl
+          mkdir -p ~/.docker/cli-plugins
+          curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | sh -s --
+
+      - name: Run Docker Scout CVE Scan
+        run: |
+          docker scout cves quiz-master > image-cves-scan.csv
+          cat image-cves-scan.csv
+
+      - name: Checking Image Quickview
+        run: |
+          docker scout quickview quiz-master > image-scan-quickview.csv
+          cat image-scan-quickview.csv
+
+      - name: Install Trivy
+        run: |
+          sudo apt-get install wget apt-transport-https gnupg lsb-release
+          wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+          echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update
+          sudo apt-get install trivy
+          clear
+          trivy --version
+
+      - name: Run Trivy Scan
+        run: |
+          trivy image quiz-master > image-trivy-scan.csv
+          cat image-trivy-scan.csv
+
+      - name: Push Docker Image to Docker Hub
+        run: |
+          docker tag quiz-master "${{ secrets.DOCKER_USERNAME }}"/quiz-master
+          docker push "${{ secrets.DOCKER_USERNAME }}"/quiz-master
+
+      - name: Send CVE Report via Email
+        uses: dawidd6/action-send-mail@v2
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: '${{ secrets.EMAIL_USERNAME }}'
+          password: '${{ secrets.EMAIL_PASSWORD }}'
+          subject: CVE Report for Docker Image
+          body: >
+            Hello Fam 😎,
+
+            Please find attached the CVE report, Trivy scan and quick overview of the Docker image.
+            Warm regards,
+            Sudha Yadav
+          to: archanakaushish@gmail.com
+          from: '${{ secrets.EMAIL_USERNAME }}'
+          attachments: image-cves-scan.csv,image-scan-quickview.csv,image-trivy-scan.csv
