@@ -1,0 +1,14 @@
+{
+  "name": "quiz-master",
+  "version": "1.0.0",
+  "description": "A simple quiz application",
+  "main": "app.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "Sudha Yadav",
+  "license": "MIT"
+}
