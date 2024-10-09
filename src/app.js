@@ -28,6 +28,11 @@ const questions = [
         question: "Which of the following is a version control system?",
         options: ["Git", "Docker", "AWS", "Jenkins"],
         correctAnswer: "Git"
+    },
+    {
+        question: "Which HTML element is used to define a header for a document?",
+        options: ["<header>", "<head>", "<h1>", "<section>"],
+        correctAnswer: "<header>"
     }
 ];
 
