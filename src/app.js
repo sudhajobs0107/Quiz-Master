@@ -13,7 +13,12 @@ const questions = [
         question: "Which planet is known as the Red Planet?",
         options: ["Earth", "Mars", "Jupiter", "Venus"],
         answer: "Mars"
-    }
+    },
+    {
+    question: "Which language is primarily used for web development?",
+    options: ["Python", "C++", "JavaScript", "Java"],
+    correctAnswer: "JavaScript"
+  }
 ];
 
 let currentQuestionIndex = 0;
