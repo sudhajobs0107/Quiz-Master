@@ -14,10 +14,6 @@ const questions = [
         options: ["Earth", "Mars", "Jupiter", "Venus"],
         answer: "Mars"
     },
- 
-
-    // adding more questions of Science , History & programming :
-
     {
         question: "What is the largest mammal in the world?",
         options: ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
@@ -43,40 +39,32 @@ const questions = [
         options: ["0", "1", "2", "3"],
         answer: "2"
     },
-     
-    
-
-    
- 
- 
     {
- 
-    question: "Which language is primarily used for web development?",
-    options: ["Python", "C++", "JavaScript", "Java"],
-    correctAnswer: "JavaScript"
-  }
- 
  
         question: "Which language is primarily used for web development?",
         options: ["Python", "C++", "JavaScript", "Java"],
-        correctAnswer: "JavaScript"
+        answer: "JavaScript"
+    },
+    {
+        question: "Which language is primarily used for web development?",
+        options: ["Python", "C++", "JavaScript", "Java"],
+        answer: "JavaScript"
     },
     {
         question: "What is the default port for HTTP?",
         options: ["80", "22", "443", "8080"],
-        correctAnswer: "80"
+        answer: "80"
     },
     {
         question: "Which of the following is a version control system?",
         options: ["Git", "Docker", "AWS", "Jenkins"],
-        correctAnswer: "Git"
+        answer: "Git"
     },
     {
         question: "Which HTML element is used to define a header for a document?",
         options: ["<header>", "<head>", "<h1>", "<section>"],
-        correctAnswer: "<header>"
+        answer: "<header>"
     }
- 
 ];
 
 let currentQuestionIndex = 0;
