@@ -188,11 +188,7 @@ const questions = [
         "question": "Which of the following is an example of a 'NP-complete' problem in computational theory?",
         "options": ["Sorting a list", "Traveling Salesman Problem", "Finding the maximum in an array", "Matrix multiplication"],
         "answer": "Traveling Salesman Problem"
-    }
-      
-      
-      
-      
+    }     
 ];
 
 let currentQuestionIndex = 0;
