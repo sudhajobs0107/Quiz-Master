@@ -168,7 +168,27 @@ const questions = [
         question: "What is the largest planet in our solar system?",
         options: ["Earth", "Mars", "Jupiter", "Saturn"],
         answer: "Jupiter"
-    }
+    },
+    {
+        "question": "In computer science, what does the term 'big O' notation describe?",
+        "options": ["The exact run time of an algorithm", "The memory usage of an algorithm", "The upper bound of an algorithm's run time", "The lower bound of an algorithm's memory usage"],
+        "answer": "The upper bound of an algorithm's run time"
+    },
+    {
+        "question": "Which of the following is the primary reason for the red color of Mars?",
+        "options": ["Iron oxide on its surface", "Presence of carbon dioxide in the atmosphere", "High volcanic activity", "Reflection of sunlight"],
+        "answer": "Iron oxide on its surface"
+    },
+    {
+        "question": "What fundamental concept of general relativity explains the bending of light around massive objects?",
+        "options": ["Time dilation", "Gravitational lensing", "Space-time curvature", "Quantum fluctuations"],
+        "answer": "Gravitational lensing"
+    },
+    {
+        "question": "Which of the following is an example of a 'NP-complete' problem in computational theory?",
+        "options": ["Sorting a list", "Traveling Salesman Problem", "Finding the maximum in an array", "Matrix multiplication"],
+        "answer": "Traveling Salesman Problem"
+    }     
 ];
 
 let currentQuestionIndex = 0;
