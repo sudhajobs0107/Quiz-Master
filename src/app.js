@@ -1,8 +1,13 @@
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        answer: "Paris"
+       question: "What is the capital of France?",
+       options: ["Berlin", "Madrid", "Paris", "Rome"],
+       answer: "Paris"
+    },
+    {
+       question: "What is the largest mammal in the world?",
+       options: ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+       answer: "Blue Whale"
     },
     {
         question: "Who wrote 'Hamlet'?",
