@@ -198,7 +198,32 @@ const questions = [
        question: "What is the chemical symbol for gold?",
        options: ["Au", "Ag", "Pb", "Fe"],
        answer: "Au"
-    }
+    },
+    {
+        question: "Who wrote the first algorithm designed to be processed by a machine?",
+        options: ["Charles Babbage", "Ada Lovelace", "George Boole", "Michael Faraday"],
+        answer: "Ada Lovelace"
+     },
+     {
+        question: "On which continent is Brazil located?",
+        options: ["North America", "Central America", "South America", "Africa"],
+        answer: "South America"
+     },
+     {
+        question: "How many times did Taylor Swift won Grammy's category Album of the Year?",
+        options: ["One", "Two", "Four", "Five"],
+        answer: "Four"
+     },
+     {
+        question: "In Star Wars, who is Luke Skywalker's sister?",
+        options: ["Lia", "Lena", "Lucy", "Leia"],
+        answer: "Leia"
+     },
+     {
+        question: "On which continent is Jamaica located?",
+        options: ["North America", "Asia", "Africa", "Central America"],
+        answer: "Central America"
+     }
 ];
 
 let currentQuestionIndex = 0;
