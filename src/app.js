@@ -223,7 +223,7 @@ const questions = [
         question: "On which continent is Jamaica located?",
         options: ["North America", "Asia", "Africa", "Central America"],
         answer: "Central America"
-     },
+     }
 ];
 
 let currentQuestionIndex = 0;
